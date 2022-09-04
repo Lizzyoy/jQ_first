@@ -147,7 +147,27 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
-
+    $('#Now').click(function(){
+      // alert(1)
+      // $(this) 指當事者也就是 $('#Now')
+      // console.log($(this));
+      // $(this).css('background-color', 'pink')
+      // $(this).prev().css('background-color', 'pink')
+      // $(this).nextAll().css('background-color', 'pink')
+      // $(this).siblings().first().css('background-color', 'pink')
+      // $(this).siblings().eq(0).css('background-color', 'pink')
+      // $(this).parent().siblings().css('background-color', 'pink')
+      // $(this).parent().parent().css('background-color', 'pink')
+      // $(this).parents().css('background-color', 'pink')
+      // $(this).parent().siblings().has('p').css('background-color', 'pink')
+      // $(this).parent().siblings('section').css('background-color', 'pink')
+      // $(this).parent().siblings().last().css('background-color', 'pink')
+      // $(this).parent().siblings().children().css('background-color', 'pink')
+      // $(this).parent().parent().children().children().css('background-color', 'pink')
+      // $(this).parent().next().find('li').eq(1).css('background-color', 'pink')
+      // $(this).parent().next().find('li').filter(':even').css('background-color', 'pink')
+      $(this).parent().siblings().last().find('p').eq(2).siblings().css('background-color', 'pink')
+    });
   </script>
 </body>
 
