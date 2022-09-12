@@ -31,8 +31,10 @@ h1 {
 }
 
 .slide .img-inner {
+  /* 勿為 staic*/
   position: relative;
   left: 0;
   display: flex;
+  /* jQuey動畫執行 */
   transition: left .3s ease;
 }
